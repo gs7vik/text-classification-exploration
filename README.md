@@ -54,4 +54,5 @@ The cross-validation results show that the **Stacked_Ensemble** model achieved t
 
 The **Stacked_Ensemble** model was selected as the best approach with a mean $F1\_macro$ score of **88.7833%**. This ensemble strategy leverages the strengths of multiple models to produce a more robust and accurate classification. The notebook then proceeds to train this model on the entire training dataset and uses it to generate predictions for the test set. The final submission file is named `submission.csv`.
 
-Also tried an pre trained embedding model based approach to check out the accuracy. It was quite low (macro averaged F1 score of 54.23%). It might be due to the fact that no data pre processing was done. But I am not sure if even after doing cleaning it would have increased significantly.
+Also tried a pre trained embedding model(facebook/bart-large-mnli) which excels at zero shot classification to check out the accuracy. It was quite low (macro averaged F1 score of 54.23%). It might be due to the fact that no data pre processing was done. But I am not sure if even after doing cleaning it would have increased significantly.
+embedding models from OpenAI may have given a higher accuracy. Have not tested with it.
